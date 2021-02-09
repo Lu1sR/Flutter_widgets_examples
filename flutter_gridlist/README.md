@@ -1,16 +1,21 @@
-# flutter_gridlist
+# flutter News app listView with clean architecture
 
-A new Flutter project.
+Flutter project with clean architecture for practice purposes 
 
-## Getting Started
+## Clean architecture
 
-This project is a starting point for a Flutter application.
+This project uses clean architecture based on Reso Coder 7 hour tutorial
 
-A few resources to get you started if this is your first Flutter project:
+I create this example to practice and also as a way to fully conprehend all the paradigms and practices that are involved in a flutter app developed with clean architecture.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Important libraries:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter bloc to manage state
+- get_it (dependency injection)
+- dartz to return to different types from methods
+- Equatable to make comparisons easier
+
+
+Simple UI design to present recent news depending on the country the user select.
+
+![Image](./lib/images/image1.jpg)

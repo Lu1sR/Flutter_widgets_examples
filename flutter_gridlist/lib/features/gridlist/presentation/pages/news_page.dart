@@ -12,7 +12,7 @@ class NewsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Number Trivia'),
+        title: Text('News App'),
       ),
       body: SingleChildScrollView(
         child: buildBody(context),
