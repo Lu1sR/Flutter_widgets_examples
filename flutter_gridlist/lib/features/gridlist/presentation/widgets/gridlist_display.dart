@@ -52,10 +52,19 @@ class ArticleListViewItem extends StatelessWidget {
                           children: <Widget>[
                             AspectRatio(
                               aspectRatio: 2,
-                              child: (newsData.urlToImage != "")
+                              child: (newsData.urlToImage != "" &&
+                                      newsData.urlToImage != null)
                                   ? Image.network(
                                       newsData.urlToImage,
                                       fit: BoxFit.cover,
+                                      errorBuilder:
+                                          (context, error, stackTrace) {
+                                        return Container(
+                                          child: Center(
+                                            child: Text("Network Image Error"),
+                                          ),
+                                        );
+                                      },
                                     )
                                   : Container(child: Text("no image")),
                             ),
@@ -85,7 +94,7 @@ class ArticleListViewItem extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              newsData.description,
+                                              newsData.description ?? "",
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.grey

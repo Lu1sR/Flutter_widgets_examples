@@ -30,7 +30,7 @@ class _NewsListViewState extends State<NewsListView>
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height,
+      height: MediaQuery.of(context).size.height * 0.6,
       child: ListView.builder(
         itemCount: widget.newsData.length,
         padding: const EdgeInsets.only(top: 8),
